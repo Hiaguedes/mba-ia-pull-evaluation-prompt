@@ -203,7 +203,7 @@ def get_llm(model: Optional[str] = None, temperature: float = 0.0):
         return ChatOpenAI(
             model=model_name,
             temperature=temperature,
-            api_key=api_key
+            api_key=api_key,
         )
 
     elif provider == 'google':
